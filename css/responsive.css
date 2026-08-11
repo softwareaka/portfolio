@@ -1,0 +1,258 @@
+/* ==========================================================================
+   DEVELOPER PORTFOLIO - RESPONSIVE STYLESHEET
+   Breakpoints: 1920px | 1440px | 1024px | 768px | 375px | 320px
+   ========================================================================== */
+
+/* Large Desktop Displays (1920px+) */
+@media (min-width: 1920px) {
+  :root {
+    --container-width: 1400px;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .featured-project .project-image-wrapper {
+    height: 500px;
+  }
+}
+
+/* Standard Desktop / Laptop (1440px) */
+@media (max-width: 1440px) {
+  .section {
+    padding: 88px 0;
+  }
+}
+
+/* Tablet Landscape / Small Laptops (1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .split-project {
+    grid-template-columns: 1fr;
+  }
+
+  .reverse-split .project-image-wrapper {
+    order: 1;
+  }
+
+  .reverse-split .project-info {
+    order: 2;
+  }
+
+  .split-project .project-image-wrapper {
+    height: 300px;
+    min-height: auto;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* Tablet Portrait (768px) */
+@media (max-width: 768px) {
+  /* Navigation Drawer for Mobile/Tablet */
+  .mobile-toggle-btn {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background-color: var(--surface);
+    border-left: 1px solid var(--border);
+    padding: 100px 32px 40px;
+    transition: right var(--transition-normal);
+    z-index: 100;
+    box-shadow: var(--shadow-md);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  /* Hero Section Adjustments */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .credibility-badges {
+    gap: 8px;
+  }
+
+  .credibility-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  /* Section Header */
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  /* About Highlights */
+  .about-highlights-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .highlight-card {
+    padding: 18px;
+  }
+
+  .highlight-value {
+    font-size: 1.2rem;
+  }
+
+  /* Experience Timeline */
+  .experience-timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-marker {
+    left: -26px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  /* Featured Project */
+  .featured-project .project-image-wrapper {
+    height: 260px;
+  }
+
+  .featured-project .project-info {
+    padding: 24px;
+  }
+
+  .project-features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-actions {
+    flex-wrap: wrap;
+  }
+
+  /* Modal */
+  .modal-container {
+    max-height: 92vh;
+  }
+
+  .modal-content-scroll {
+    padding: 28px 20px;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+/* Mobile Screens (375px) */
+@media (max-width: 375px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .about-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 24px 16px;
+  }
+
+  .contact-social-row {
+    flex-direction: column;
+  }
+}
+
+/* Micro Devices (320px) */
+@media (max-width: 320px) {
+  .logo-text {
+    font-size: 0.85rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.8rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+}

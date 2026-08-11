@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Xojiakbar Abdumutalov — Frontend Developer with 2 years of experience building responsive and modern web applications using JavaScript, React, and TypeScript.">
+  <meta name="keywords"
+    content="Xojiakbar Abdumutalov, Frontend Developer, React, JavaScript, TypeScript, TanStack Query, FSD, Zustand, Mantine, Web Developer">
+  <meta name="author" content="Xojiakbar Abdumutalov">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/softwareaka">
+  <meta property="og:title" content="Xojiakbar Abdumutalov — Frontend Developer Portfolio">
+  <meta property="og:description"
+    content="I build interfaces that feel simple. Frontend Developer with 2 years of experience.">
+  <meta property="og:image" content="assets/images/anor-shop.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Xojiakbar Abdumutalov — Frontend Developer Portfolio">
+  <meta name="twitter:description" content="I build interfaces that feel simple.">
+
+  <title>Xojiakbar Abdumutalov — Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Xojiakbar Abdumutalov Homepage">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">XOJIAKBAR ABDUMUTALOV</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions & Socials -->
+      <div class="nav-actions">
+        <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+          aria-label="GitHub Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/xojiakbar-abdumutalov-aa17532ba/" target="_blank" rel="noopener noreferrer"
+          class="social-icon-btn" aria-label="LinkedIn Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Open mobile menu" aria-expanded="false"
+          aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <div class="availability-badge">
+            <span class="status-dot"></span>
+            <span>AVAILABLE FOR FRONTEND OPPORTUNITIES</span>
+          </div>
+
+          <h2 class="hero-eyebrow">FRONTEND DEVELOPER</h2>
+
+          <h1 class="hero-title">
+            I build interfaces that feel simple.
+          </h1>
+
+          <p class="hero-subtitle">
+            I'm a Frontend Developer with 2 years of experience building responsive and modern web applications. My primary focus is JavaScript and React, with experience across the frontend ecosystem — from reusable UI components and API integration to state management and server-side data synchronization.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Technical Credibility Badge Strip -->
+          <div class="tech-credibility-strip">
+            <span class="credibility-label">Core Tech Stack</span>
+            <div class="credibility-badges">
+              <span class="credibility-badge">JavaScript</span>
+              <span class="credibility-badge">TypeScript</span>
+              <span class="credibility-badge">React</span>
+              <span class="credibility-badge">TanStack Query</span>
+              <span class="credibility-badge">Zustand</span>
+              <span class="credibility-badge">FSD Architecture</span>
+              <span class="credibility-badge">Mantine UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Background Grid Decoration -->
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">01</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-content reveal">
+            <h3 class="about-lead">
+              I build responsive and modern web applications with a strong focus on usability, clean code architecture, and intuitive user experiences.
+            </h3>
+            <p class="about-description">
+              I'm a Frontend Developer with 2 years of experience building responsive and modern web applications. My primary focus is JavaScript and React, with experience across the frontend ecosystem — from reusable UI components and API integration to state management and server-side data synchronization.
+            </p>
+            <p class="about-description">
+              I also mentor aspiring frontend developers, helping them build a strong foundation in JavaScript and modern frontend development. Additionally, I have helped team partners win multiple hackathons by crafting high-performance, real-time user interfaces under tight deadlines.
+            </p>
+          </div>
+
+          <!-- Professional Highlights Grid -->
+          <div class="about-highlights-grid reveal">
+            <div class="highlight-card">
+              <div class="highlight-value">2 Years</div>
+              <div class="highlight-label">Frontend Development Experience</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-value">100+</div>
+              <div class="highlight-label">Students Mentored</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-value">Hackathons</div>
+              <div class="highlight-label">Multiple Competition Winner</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-value">Production UI</div>
+              <div class="highlight-label">Scalable React &amp; FSD Architecture</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: Core Stack -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3>Core Stack</h3>
+            </div>
+            <div class="skill-badges">
+              <div class="skill-badge">JavaScript</div>
+              <div class="skill-badge">TypeScript</div>
+              <div class="skill-badge">React</div>
+            </div>
+          </div>
+
+          <!-- Skill Category 2: Ecosystem (State & Data) -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M21 19c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                </svg>
+              </div>
+              <h3>Ecosystem</h3>
+            </div>
+            <div class="skill-badges">
+              <div class="skill-badge">TanStack Query</div>
+              <div class="skill-badge">Redux Toolkit</div>
+              <div class="skill-badge">Zustand</div>
+              <div class="skill-badge">Axios</div>
+              <div class="skill-badge">REST API</div>
+            </div>
+          </div>
+
+          <!-- Skill Category 3: UI & Styling -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <h3>UI &amp; Styling</h3>
+            </div>
+            <div class="skill-badges">
+              <div class="skill-badge">Mantine</div>
+              <div class="skill-badge">Material UI</div>
+              <div class="skill-badge">Tailwind CSS</div>
+              <div class="skill-badge">Sass</div>
+              <div class="skill-badge">Bootstrap</div>
+            </div>
+          </div>
+
+          <!-- Skill Category 4: Tools & Workflow -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg>
+              </div>
+              <h3>Tools &amp; Workflow</h3>
+            </div>
+            <div class="skill-badges">
+              <div class="skill-badge">Git</div>
+              <div class="skill-badge">Vite</div>
+              <div class="skill-badge">ESLint</div>
+              <div class="skill-badge">Prettier</div>
+              <div class="skill-badge">Figma</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Experience</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Experience Item 1: Anorbank -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">FRONTEND DEVELOPER INTERN</h3>
+                  <div class="company-name">Anorbank</div>
+                </div>
+                <div class="timeline-period">2026 — Present</div>
+              </div>
+
+              <ul class="bullet-list">
+                <li>Participating in the development of the bank's digital products, learning banking systems, and improving user interfaces.</li>
+                <li>Building real-world e-commerce projects and production-grade frontend features.</li>
+                <li>Integrating asynchronous REST APIs and managing complex client-side state using Zustand and TanStack Query.</li>
+                <li>Applying Feature-Sliced Design (FSD) architecture principles for scalable and maintainable codebases.</li>
+              </ul>
+
+              <div class="experience-tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">TanStack Query</span>
+                <span class="tech-tag">FSD Architecture</span>
+                <span class="tech-tag">Zustand</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Mantine UI</span>
+                <span class="tech-tag">Git</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience Item 2: Algoritm Edu Center -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">FRONTEND MENTOR &amp; DEVELOPER</h3>
+                  <div class="company-name">Algoritm Edu Center</div>
+                </div>
+                <div class="timeline-period">01.09.2024 — 01.09.2026</div>
+              </div>
+
+              <ul class="bullet-list">
+                <li>Mentored over 100+ students in modern JavaScript, React, and frontend development fundamentals.</li>
+                <li>Developed strong technical communication skills while conducting code reviews and technical workshops.</li>
+                <li>Built and maintained responsive internal educational web applications and student portals.</li>
+                <li>Guided student teams in hackathons, achieving top award positions through fast UI prototyping.</li>
+              </ul>
+
+              <div class="experience-tech-stack">
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">State Management</span>
+                <span class="tech-tag">HTML5 &amp; CSS3</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">Technical Mentorship</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Visual Centerpiece) -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-wrapper">
+          <!-- Featured Large Project (Project 1) -->
+          <article class="project-card featured-project reveal" data-project-id="anor-shop">
+            <div class="project-image-wrapper">
+              <img src="assets/images/anor-shop.png" alt="ANOR SHOP E-Commerce Platform Screenshot" class="project-img"
+                loading="lazy">
+              <div class="image-overlay">
+                <button class="btn btn-primary open-modal-btn" data-project-id="anor-shop">
+                  <span>View Case Study</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+              </div>
+              <span class="featured-badge">Featured Project</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <h3 class="project-title">ANOR SHOP</h3>
+                <p class="project-tagline">Real-world e-commerce platform built with FSD architecture</p>
+              </div>
+
+              <p class="project-description">
+                A production-grade online shopping platform built with React, TypeScript, and Feature-Sliced Design (FSD) architecture. Features real-time state sync, TanStack Query API caching, and Mantine UI.
+              </p>
+
+              <div class="project-tech-list">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">TanStack Query</span>
+                <span class="tech-badge">FSD</span>
+                <span class="tech-badge">Zustand</span>
+                <span class="tech-badge">Mantine UI</span>
+              </div>
+
+              <ul class="project-features-list">
+                <li>Feature-Sliced Design (FSD) modular architecture</li>
+                <li>Real-time Product Search &amp; Multi-filter Index</li>
+                <li>Shopping Cart &amp; Wishlist Local Persistence</li>
+                <li>REST API Integration with automated retry logic</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <span>View Source</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="anor-shop">
+                  <span>Case Study</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Alternating Project 2 (Image Left / Info Right) -->
+          <article class="project-card split-project reveal" data-project-id="kilowatt-tracker">
+            <div class="project-image-wrapper">
+              <img src="assets/images/kilowatt-tracker.png" alt="Kilowatt Tracker Energy Dashboard Screenshot"
+                class="project-img" loading="lazy">
+              <div class="image-overlay">
+                <button class="btn btn-primary open-modal-btn" data-project-id="kilowatt-tracker">
+                  <span>View Case Study</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <h3 class="project-title">KILOWATT TRACKER</h3>
+                <p class="project-tagline">Energy consumption analytics &amp; multi-language monitoring portal</p>
+              </div>
+
+              <p class="project-description">
+                A high-performance energy tracking dashboard providing real-time data visualization, multi-language
+                localization (EN, RU, UZ), and historical utility cost analysis.
+              </p>
+
+              <div class="project-tech-list">
+                <span class="tech-badge">JavaScript ES6+</span>
+                <span class="tech-badge">Chart.js</span>
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">i18n Engine</span>
+              </div>
+
+              <ul class="project-features-list">
+                <li>Interactive SVG/Canvas energy chart rendering</li>
+                <li>Dynamic multi-language (i18n) switching without page reload</li>
+                <li>Customizable tariff baselines &amp; monthly report exports</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <span>View Source</span>
+                </a>
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="kilowatt-tracker">
+                  <span>Case Study</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Alternating Project 3 (Info Left / Image Right) -->
+          <article class="project-card split-project reverse-split reveal" data-project-id="deposit-manager">
+            <div class="project-image-wrapper">
+              <img src="assets/images/deposit-manager.png" alt="Deposit Manager Platform Screenshot" class="project-img"
+                loading="lazy">
+              <div class="image-overlay">
+                <button class="btn btn-primary open-modal-btn" data-project-id="deposit-manager">
+                  <span>View Case Study</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <h3 class="project-title">DEPOSIT MANAGER</h3>
+                <p class="project-tagline">Financial baseline &amp; automated reporting web application</p>
+              </div>
+
+              <p class="project-description">
+                A financial management utility engineered to track deposit baselines, project compound monthly returns,
+                and generate clean structured audit reports.
+              </p>
+
+              <div class="project-tech-list">
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Vite</span>
+                <span class="tech-badge">Custom Hooks</span>
+                <span class="tech-badge">Storage API</span>
+              </div>
+
+              <ul class="project-features-list">
+                <li>Configurable monthly financial deposit baseline edit engine</li>
+                <li>Automated compound growth calculations &amp; yield projections</li>
+                <li>Light/Dark UI theme persistence &amp; print-ready stylesheet</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <span>View Source</span>
+                </a>
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="deposit-manager">
+                  <span>Case Study</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 (Split Layout) -->
+          <article class="project-card split-project reveal" data-project-id="devstudio-portal">
+            <div class="project-image-wrapper">
+              <img src="assets/images/devstudio-portal.png" alt="DevStudio Portal Web App Screenshot"
+                class="project-img" loading="lazy">
+              <div class="image-overlay">
+                <button class="btn btn-primary open-modal-btn" data-project-id="devstudio-portal">
+                  <span>View Case Study</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <h3 class="project-title">DEVSTUDIO PORTAL</h3>
+                <p class="project-tagline">Client onboarding &amp; project intake portal</p>
+              </div>
+
+              <p class="project-description">
+                A streamlined client onboarding portal built with pure HTML5, CSS3, and Vanilla JavaScript, offering
+                step-by-step form wizards, instant validation, and zero framework overhead.
+              </p>
+
+              <div class="project-tech-list">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">CSS Variables</span>
+                <span class="tech-badge">Fetch API</span>
+              </div>
+
+              <ul class="project-features-list">
+                <li>Multi-stage client intake form wizard with state memory</li>
+                <li>Asynchronous payload validation and error messaging</li>
+                <li>Ultra-fast 100/100 Lighthouse performance score</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <span>View Source</span>
+                </a>
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="devstudio-portal">
+                  <span>Case Study</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">05</span>
+          <h2 class="section-title">Contact</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3 class="contact-heading">Let's build something useful.</h3>
+            <p class="contact-subtext">
+              I am currently open to frontend engineering opportunities, internships, and full-time roles. Feel free to reach out via email or connect on GitHub and LinkedIn.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="method-label">Direct Email</span>
+                  <div class="email-copy-wrapper">
+                    <a href="mailto:xojiakbar.softwareaka@gmail.com" class="method-value"
+                      id="email-link">xojiakbar.softwareaka@gmail.com</a>
+                    <button class="copy-btn" id="copy-email-btn" aria-label="Copy email address">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-social-row">
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="social-card">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/xojiakbar-abdumutalov-aa17532ba/" target="_blank" rel="noopener noreferrer" class="social-card">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <form id="contact-form" class="contact-form reveal" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your Name" required>
+              <span class="error-message" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email</label>
+              <input type="email" id="contact-email" name="email" class="form-input"
+                placeholder="your.email@example.com" required>
+              <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-input form-textarea" rows="5"
+                placeholder="How can I help you?" required></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-name">Xojiakbar Abdumutalov</span>
+        <span class="footer-role">• Frontend Developer</span>
+      </div>
+      <div class="footer-center">
+        <span>© 2026 Xojiakbar Abdumutalov. All rights reserved.</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Case Study Project Modal -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-content-scroll" id="modal-body-content">
+        <!-- Dynamically injected via projects.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript Files -->
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
