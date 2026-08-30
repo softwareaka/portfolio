@@ -42,9 +42,7 @@ portfolio/
 ├── assets/
 │   ├── images/             # Project screenshots
 │   │   ├── anor-shop.png
-│   │   ├── kilowatt-tracker.png
-│   │   ├── deposit-manager.png
-│   │   └── devstudio-portal.png
+│   │   └── kilowatt-tracker.png
 │   └── icons/              # Custom SVG assets
 └── README.md               # Documentation
 ```

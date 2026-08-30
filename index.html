@@ -129,7 +129,9 @@
           </h1>
 
           <p class="hero-subtitle">
-            I'm a Frontend Developer with 2 years of experience building responsive and modern web applications. My primary focus is JavaScript and React, with experience across the frontend ecosystem — from reusable UI components and API integration to state management and server-side data synchronization.
+            I'm a Frontend Developer with 2 years of experience building responsive and modern web applications. My
+            primary focus is JavaScript and React, with experience across the frontend ecosystem — from reusable UI
+            components and API integration to state management and server-side data synchronization.
           </p>
 
           <div class="hero-cta-group">
@@ -141,7 +143,16 @@
                 <polyline points="19 12 12 19 5 12"></polyline>
               </svg>
             </a>
-            <a href="#contact" class="btn btn-secondary">
+            <a href="assets/Xojiakbar Abdumutalov.pdf" download="Xojiakbar_Abdumutalov_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              <span>Download Resume</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
               <span>Contact Me</span>
             </a>
           </div>
@@ -178,13 +189,18 @@
         <div class="about-grid">
           <div class="about-text-content reveal">
             <h3 class="about-lead">
-              I build responsive and modern web applications with a strong focus on usability, clean code architecture, and intuitive user experiences.
+              I build responsive and modern web applications with a strong focus on usability, clean code architecture,
+              and intuitive user experiences.
             </h3>
             <p class="about-description">
-              I'm a Frontend Developer with 2 years of experience building responsive and modern web applications. My primary focus is JavaScript and React, with experience across the frontend ecosystem — from reusable UI components and API integration to state management and server-side data synchronization.
+              I'm a Frontend Developer with 2 years of experience building responsive and modern web applications. My
+              primary focus is JavaScript and React, with experience across the frontend ecosystem — from reusable UI
+              components and API integration to state management and server-side data synchronization.
             </p>
             <p class="about-description">
-              I also mentor aspiring frontend developers, helping them build a strong foundation in JavaScript and modern frontend development. Additionally, I have helped team partners win multiple hackathons by crafting high-performance, real-time user interfaces under tight deadlines.
+              I also mentor aspiring frontend developers, helping them build a strong foundation in JavaScript and
+              modern frontend development. Additionally, I have helped team partners win multiple hackathons by crafting
+              high-performance, real-time user interfaces under tight deadlines.
             </p>
           </div>
 
@@ -234,6 +250,8 @@
               <h3>Core Stack</h3>
             </div>
             <div class="skill-badges">
+              <div class="skill-badge">HTML</div>
+              <div class="skill-badge">CSS</div>
               <div class="skill-badge">JavaScript</div>
               <div class="skill-badge">TypeScript</div>
               <div class="skill-badge">React</div>
@@ -329,10 +347,13 @@
               </div>
 
               <ul class="bullet-list">
-                <li>Participating in the development of the bank's digital products, learning banking systems, and improving user interfaces.</li>
+                <li>Participating in the development of the bank's digital products, learning banking systems, and
+                  improving user interfaces.</li>
                 <li>Building real-world e-commerce projects and production-grade frontend features.</li>
-                <li>Integrating asynchronous REST APIs and managing complex client-side state using Zustand and TanStack Query.</li>
-                <li>Applying Feature-Sliced Design (FSD) architecture principles for scalable and maintainable codebases.</li>
+                <li>Integrating asynchronous REST APIs and managing complex client-side state using Zustand and TanStack
+                  Query.</li>
+                <li>Applying Feature-Sliced Design (FSD) architecture principles for scalable and maintainable
+                  codebases.</li>
               </ul>
 
               <div class="experience-tech-stack">
@@ -362,7 +383,8 @@
 
               <ul class="bullet-list">
                 <li>Mentored over 100+ students in modern JavaScript, React, and frontend development fundamentals.</li>
-                <li>Developed strong technical communication skills while conducting code reviews and technical workshops.</li>
+                <li>Developed strong technical communication skills while conducting code reviews and technical
+                  workshops.</li>
                 <li>Built and maintained responsive internal educational web applications and student portals.</li>
                 <li>Guided student teams in hackathons, achieving top award positions through fast UI prototyping.</li>
               </ul>
@@ -391,10 +413,146 @@
         </div>
 
         <div class="projects-wrapper">
-          <!-- Featured Large Project (Project 1) -->
-          <article class="project-card featured-project reveal" data-project-id="anor-shop">
+          <!-- Featured Project 1: taiga.io -->
+          <article class="project-card featured-project reveal" data-project-id="taiga-io">
             <div class="project-image-wrapper">
-              <img src="assets/images/anor-shop.png" alt="ANOR SHOP E-Commerce Platform Screenshot" class="project-img"
+              <img src="assets/images/taiga-io.png" alt="taiga.io Project Management Platform Screenshot" class="project-img"
+                loading="lazy">
+              <div class="image-overlay">
+                <button class="btn btn-primary open-modal-btn" data-project-id="taiga-io">
+                  <span>View Case Study</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+              </div>
+              <span class="featured-badge">Team Project</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <h3 class="project-title">taiga.io</h3>
+                <p class="project-tagline">Agile &amp; ClickUp-style project management built with team collaboration</p>
+              </div>
+
+              <p class="project-description">
+                A collaborative agile workspace built with a team where members split project tasks, work together with interactive drag-and-drop boards, set deadlines, and manage sprint milestones.
+              </p>
+
+              <div class="project-tech-list">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Mantine</span>
+                <span class="tech-badge">TanStack Query</span>
+                <span class="tech-badge">FSD</span>
+                <span class="tech-badge">Unit Tests</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Tokens</span>
+              </div>
+
+              <ul class="project-features-list">
+                <li>Interactive drag &amp; drop task boards with deadline tracking</li>
+                <li>Team task splitting &amp; workload distribution</li>
+                <li>Feature-Sliced Design (FSD) architecture &amp; unit tests</li>
+                <li>Token-based secure authentication &amp; state synchronization</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-secondary">
+                  <span>View Source</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="taiga-io">
+                  <span>Case Study</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Project 2: Kilowatt Tracker -->
+          <article class="project-card split-project reveal" data-project-id="kilowatt-tracker">
+            <div class="project-image-wrapper">
+              <img src="assets/images/kilowatt-tracker.png" alt="Kilowatt Tracker Electricity Calculator Screenshot"
+                class="project-img" loading="lazy">
+              <div class="image-overlay">
+                <button class="btn btn-primary open-modal-btn" data-project-id="kilowatt-tracker">
+                  <span>View Case Study</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <h3 class="project-title">KILOWATT TRACKER</h3>
+                <p class="project-tagline">Electricity consumption calculator &amp; analytics built for education centers</p>
+              </div>
+
+              <p class="project-description">
+                A specialized energy consumption management tool engineered for educational centers to monitor daily electricity usage, estimate balance longevity, track deposit credits, and generate monthly reports.
+              </p>
+
+              <div class="project-tech-list">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">I18n Library</span>
+                <span class="tech-badge">Mantine</span>
+                <span class="tech-badge">TypeScript</span>
+              </div>
+
+              <ul class="project-features-list">
+                <li>Starter deposit balance tracking with low-deposit warning alert</li>
+                <li>Kilowatt duration calculator forecasting remaining days of power supply</li>
+                <li>Daily, 3-day, and monthly usage metrics for kWh and added credits</li>
+                <li>Monthly reports detailing total spent, average kWh usage, and credit history</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-secondary">
+                  <span>View Source</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+                <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="kilowatt-tracker">
+                  <span>Case Study</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Project 3: Anor-shop -->
+          <article class="project-card split-project reverse-split reveal" data-project-id="anor-shop">
+            <div class="project-image-wrapper">
+              <img src="assets/images/anor-shop.png" alt="Anor-shop E-Commerce Platform Screenshot" class="project-img"
                 loading="lazy">
               <div class="image-overlay">
                 <button class="btn btn-primary open-modal-btn" data-project-id="anor-shop">
@@ -405,37 +563,38 @@
                   </svg>
                 </button>
               </div>
-              <span class="featured-badge">Featured Project</span>
             </div>
 
             <div class="project-info">
               <div class="project-meta">
-                <h3 class="project-title">ANOR SHOP</h3>
-                <p class="project-tagline">Real-world e-commerce platform built with FSD architecture</p>
+                <h3 class="project-title">Anor-shop</h3>
+                <p class="project-tagline">Role-based e-commerce platform with client portal, admin dashboard &amp; pagination</p>
               </div>
 
               <p class="project-description">
-                A production-grade online shopping platform built with React, TypeScript, and Feature-Sliced Design (FSD) architecture. Features real-time state sync, TanStack Query API caching, and Mantine UI.
+                An e-commerce application featuring Client and Admin role capabilities. Includes client search, filtering, and product detail views, plus complete Admin CRUD for managing products, categories, and average pricing statistics with paginated performance.
               </p>
 
               <div class="project-tech-list">
                 <span class="tech-badge">React</span>
-                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Mantine</span>
                 <span class="tech-badge">TanStack Query</span>
                 <span class="tech-badge">FSD</span>
-                <span class="tech-badge">Zustand</span>
-                <span class="tech-badge">Mantine UI</span>
+                <span class="tech-badge">Unit Tests</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Tokens</span>
               </div>
 
               <ul class="project-features-list">
-                <li>Feature-Sliced Design (FSD) modular architecture</li>
-                <li>Real-time Product Search &amp; Multi-filter Index</li>
-                <li>Shopping Cart &amp; Wishlist Local Persistence</li>
-                <li>REST API Integration with automated retry logic</li>
+                <li>Client portal: instant product search, multi-filter &amp; product detail view</li>
+                <li>Admin portal: full CRUD operations for products &amp; categories with average price</li>
+                <li>Paginated product listing engineered for optimized catalog rendering</li>
+                <li>Feature-Sliced Design (FSD) modular architecture with unit test coverage</li>
               </ul>
 
               <div class="project-actions">
-                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary">
                   <span>Live Demo</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -443,7 +602,8 @@
                     <line x1="10" y1="14" x2="21" y2="3"></line>
                   </svg>
                 </a>
-                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-secondary">
                   <span>View Source</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path
@@ -452,171 +612,6 @@
                   </svg>
                 </a>
                 <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="anor-shop">
-                  <span>Case Study</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Alternating Project 2 (Image Left / Info Right) -->
-          <article class="project-card split-project reveal" data-project-id="kilowatt-tracker">
-            <div class="project-image-wrapper">
-              <img src="assets/images/kilowatt-tracker.png" alt="Kilowatt Tracker Energy Dashboard Screenshot"
-                class="project-img" loading="lazy">
-              <div class="image-overlay">
-                <button class="btn btn-primary open-modal-btn" data-project-id="kilowatt-tracker">
-                  <span>View Case Study</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="project-info">
-              <div class="project-meta">
-                <h3 class="project-title">KILOWATT TRACKER</h3>
-                <p class="project-tagline">Energy consumption analytics &amp; multi-language monitoring portal</p>
-              </div>
-
-              <p class="project-description">
-                A high-performance energy tracking dashboard providing real-time data visualization, multi-language
-                localization (EN, RU, UZ), and historical utility cost analysis.
-              </p>
-
-              <div class="project-tech-list">
-                <span class="tech-badge">JavaScript ES6+</span>
-                <span class="tech-badge">Chart.js</span>
-                <span class="tech-badge">CSS Grid</span>
-                <span class="tech-badge">i18n Engine</span>
-              </div>
-
-              <ul class="project-features-list">
-                <li>Interactive SVG/Canvas energy chart rendering</li>
-                <li>Dynamic multi-language (i18n) switching without page reload</li>
-                <li>Customizable tariff baselines &amp; monthly report exports</li>
-              </ul>
-
-              <div class="project-actions">
-                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                  <span>Live Demo</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <span>View Source</span>
-                </a>
-                <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="kilowatt-tracker">
-                  <span>Case Study</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Alternating Project 3 (Info Left / Image Right) -->
-          <article class="project-card split-project reverse-split reveal" data-project-id="deposit-manager">
-            <div class="project-image-wrapper">
-              <img src="assets/images/deposit-manager.png" alt="Deposit Manager Platform Screenshot" class="project-img"
-                loading="lazy">
-              <div class="image-overlay">
-                <button class="btn btn-primary open-modal-btn" data-project-id="deposit-manager">
-                  <span>View Case Study</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="project-info">
-              <div class="project-meta">
-                <h3 class="project-title">DEPOSIT MANAGER</h3>
-                <p class="project-tagline">Financial baseline &amp; automated reporting web application</p>
-              </div>
-
-              <p class="project-description">
-                A financial management utility engineered to track deposit baselines, project compound monthly returns,
-                and generate clean structured audit reports.
-              </p>
-
-              <div class="project-tech-list">
-                <span class="tech-badge">TypeScript</span>
-                <span class="tech-badge">Vite</span>
-                <span class="tech-badge">Custom Hooks</span>
-                <span class="tech-badge">Storage API</span>
-              </div>
-
-              <ul class="project-features-list">
-                <li>Configurable monthly financial deposit baseline edit engine</li>
-                <li>Automated compound growth calculations &amp; yield projections</li>
-                <li>Light/Dark UI theme persistence &amp; print-ready stylesheet</li>
-              </ul>
-
-              <div class="project-actions">
-                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                  <span>Live Demo</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <span>View Source</span>
-                </a>
-                <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="deposit-manager">
-                  <span>Case Study</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4 (Split Layout) -->
-          <article class="project-card split-project reveal" data-project-id="devstudio-portal">
-            <div class="project-image-wrapper">
-              <img src="assets/images/devstudio-portal.png" alt="DevStudio Portal Web App Screenshot"
-                class="project-img" loading="lazy">
-              <div class="image-overlay">
-                <button class="btn btn-primary open-modal-btn" data-project-id="devstudio-portal">
-                  <span>View Case Study</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="project-info">
-              <div class="project-meta">
-                <h3 class="project-title">DEVSTUDIO PORTAL</h3>
-                <p class="project-tagline">Client onboarding &amp; project intake portal</p>
-              </div>
-
-              <p class="project-description">
-                A streamlined client onboarding portal built with pure HTML5, CSS3, and Vanilla JavaScript, offering
-                step-by-step form wizards, instant validation, and zero framework overhead.
-              </p>
-
-              <div class="project-tech-list">
-                <span class="tech-badge">HTML5</span>
-                <span class="tech-badge">Vanilla JS</span>
-                <span class="tech-badge">CSS Variables</span>
-                <span class="tech-badge">Fetch API</span>
-              </div>
-
-              <ul class="project-features-list">
-                <li>Multi-stage client intake form wizard with state memory</li>
-                <li>Asynchronous payload validation and error messaging</li>
-                <li>Ultra-fast 100/100 Lighthouse performance score</li>
-              </ul>
-
-              <div class="project-actions">
-                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                  <span>Live Demo</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="https://github.com/softwareaka" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <span>View Source</span>
-                </a>
-                <button class="btn btn-sm btn-ghost open-modal-btn" data-project-id="devstudio-portal">
                   <span>Case Study</span>
                 </button>
               </div>
@@ -639,7 +634,8 @@
           <div class="contact-info reveal">
             <h3 class="contact-heading">Let's build something useful.</h3>
             <p class="contact-subtext">
-              I am currently open to frontend engineering opportunities, internships, and full-time roles. Feel free to reach out via email or connect on GitHub and LinkedIn.
+              I am currently open to frontend engineering opportunities, internships, and full-time roles. Feel free to
+              reach out via email or connect on GitHub and LinkedIn.
             </p>
 
             <div class="contact-methods">
@@ -654,7 +650,7 @@
                   <span class="method-label">Direct Email</span>
                   <div class="email-copy-wrapper">
                     <a href="mailto:xojiakbar.softwareaka@gmail.com" class="method-value"
-                      id="email-link">xojiakbar.softwareaka@gmail.com</a>
+                      id="email-link">hojiakbarabdumutalov924@gmail.com</a>
                     <button class="copy-btn" id="copy-email-btn" aria-label="Copy email address">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                         stroke-width="2">
@@ -675,7 +671,8 @@
                   </svg>
                   <span>GitHub</span>
                 </a>
-                <a href="https://www.linkedin.com/in/xojiakbar-abdumutalov-aa17532ba/" target="_blank" rel="noopener noreferrer" class="social-card">
+                <a href="https://www.linkedin.com/in/xojiakbar-abdumutalov-aa17532ba/" target="_blank"
+                  rel="noopener noreferrer" class="social-card">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                     <rect x="2" y="9" width="4" height="12"></rect>
@@ -688,7 +685,11 @@
           </div>
 
           <!-- Interactive Contact Form -->
-          <form id="contact-form" class="contact-form reveal" novalidate>
+          <form id="contact-form" action="https://formsubmit.co/hojiakbarabdumutalov924@gmail.com" method="POST" class="contact-form reveal">
+            <!-- FormSubmit Configurations: Disable Captcha & Format Email -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
             <div class="form-group">
               <label for="contact-name" class="form-label">Name</label>
               <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your Name" required>

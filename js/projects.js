@@ -4,73 +4,58 @@
  */
 
 const PROJECTS_DATA = {
-  'anor-shop': {
-    title: 'ANOR SHOP',
-    subtitle: 'Real-World E-Commerce Platform with Feature-Sliced Design (FSD)',
-    image: 'assets/images/anor-shop.png',
-    overview: 'ANOR SHOP is a high-performance, responsive e-commerce web application engineered with React, TypeScript, and Feature-Sliced Design (FSD) architecture, demonstrating client-side state caching and real-time catalog search.',
-    challenge: 'Users required a frictionless interface to browse, filter, and compare large product catalogs without full page reloads, while retaining dynamic deep-link URLs for sharing specific search and filter states.',
-    solution: 'Engineered a URL-synchronized filtering pipeline using React, TanStack Query, and Zustand. State changes update URL query parameters seamlessly, preserving search state across browser history and social sharing.',
+  'taiga-io': {
+    title: 'TAIGA.IO (TEAM PROJECT)',
+    subtitle: 'Agile & ClickUp-Style Collaborative Task & Project Management Platform',
+    image: 'assets/images/taiga-io.png',
+    overview: 'taiga.io is an Agile project management and workspace collaboration tool built with a team, enabling members to split project tasks, manage deadlines, and streamline workflows using interactive drag-and-drop boards.',
+    challenge: 'Enabling real-time collaborative task updates and multi-member assignments with low latency, preventing state desynchronization across active team members.',
+    solution: 'Implemented Feature-Sliced Design (FSD) architecture with React, TanStack Query, and Mantine UI. Managed token-based secure authentication and optimized optimistic UI updates for drag-and-drop task movements.',
     features: [
-      'Feature-Sliced Design (FSD) modular architecture',
-      'User Authentication state & session management',
-      'Multi-criteria product search with debounced text indexing',
-      'Persistent shopping cart & wishlist using LocalStorage sync',
-      'REST API integration with automated retry and error boundary handling'
+      'Interactive Drag-and-Drop Task Kanban boards with status columns',
+      'Team task splitting, member assignment, and workload distribution',
+      'Deadline tracking, milestone scheduling, and urgent alert badges',
+      'Feature-Sliced Design (FSD) modular frontend structure',
+      'Token-based authentication and secure session state sync',
+      'Comprehensive Unit Testing suite ensuring reliable component state'
     ],
-    technicalDecisions: 'Chosen Zustand over Redux for lightweight state management without boilerplate overhead. Applied TanStack Query for asynchronous caching and background refetching alongside Mantine UI components.',
+    technicalDecisions: 'Built with React, Mantine UI, and TanStack Query for server-side state synchronization. Architecture scaled using FSD guidelines and verified with TypeScript static typing and automated unit tests.',
     demoUrl: 'https://github.com/softwareaka',
     githubUrl: 'https://github.com/softwareaka'
   },
   'kilowatt-tracker': {
     title: 'KILOWATT TRACKER',
-    subtitle: 'Energy Consumption Analytics & Multi-Language Monitoring Portal',
+    subtitle: 'Electricity Consumption Calculator & Utility Analytics for Education Centers',
     image: 'assets/images/kilowatt-tracker.png',
-    overview: 'Kilowatt Tracker is a real-time utility monitoring platform providing interactive energy usage charts, multi-language localization (EN, RU, UZ), and historical cost analytics.',
-    challenge: 'Handling multi-language string transformations dynamically across complex data tables and interactive charts without introducing DOM flickering or performance degradation.',
-    solution: 'Built a lightweight custom i18n engine with JSON dictionary maps, enabling instant, zero-reload language switching. Chart datasets re-render reactively with localized date formats and currency symbols.',
+    overview: 'Kilowatt Tracker is a specialized electricity consumption management web application tailored for educational institutions to monitor daily power usage, forecast kilowatt duration, and manage starter credit deposits.',
+    challenge: 'Education centers needed an intuitive tool to track starter deposits, predict remaining days of electricity balance, and generate monthly financial reports with zero delay.',
+    solution: 'Engineered dynamic energy calculation formulas using React, TypeScript, and Mantine UI with multi-language (i18n) support. Integrated real-time deposit threshold warnings and comprehensive monthly report generators.',
     features: [
-      'Interactive Canvas/SVG chart rendering for daily and monthly kWh usage',
-      'Instant multi-language switching (English, Russian, Uzbek)',
-      'Configurable energy tariff baseline calculation engine',
-      'Exportable utility reports and usage history filter',
-      'Fully responsive UI optimized for low-bandwidth mobile devices'
+      'Starter credit deposit tracking with automated low-balance alert warnings',
+      'Kilowatt duration calculator forecasting remaining supply days based on consumption rate',
+      'Multi-period analytics: Daily, 3-day, and monthly usage metrics for kWh and credits',
+      'Monthly reporting dashboard summarizing total spent, average kWh usage, and credit history',
+      'Dynamic multi-language support (i18n engine) for seamless localization'
     ],
-    technicalDecisions: 'Utilized Vanilla JavaScript ES6+ modules and pure CSS Grid to achieve maximum rendering speed and zero framework dependencies. State persistence handled safely via LocalStorage API.',
+    technicalDecisions: 'Leveraged React, Mantine UI, and TypeScript for high type safety and fluid UI components. Implemented i18n localization for instant language switches and client-side calculations for instant results.',
     demoUrl: 'https://github.com/softwareaka',
     githubUrl: 'https://github.com/softwareaka'
   },
-  'deposit-manager': {
-    title: 'DEPOSIT MANAGER',
-    subtitle: 'Financial Baseline & Automated Reporting Web Application',
-    image: 'assets/images/deposit-manager.png',
-    overview: 'Deposit Manager is a financial asset application designed for tracking baseline investments, calculating monthly compound interest schedules, and outputting clean audit reports.',
-    challenge: 'Ensuring absolute precision in client-side financial calculations while maintaining customizable baseline edits and dynamic reporting dates.',
-    solution: 'Designed strict TypeScript data models and reusable hook logic for real-time interest compounding, complete with automated rounding validation and customizable baseline thresholds.',
+  'anor-shop': {
+    title: 'ANOR SHOP',
+    subtitle: 'Role-Based E-Commerce Platform with Client Catalog & Admin Dashboard',
+    image: 'assets/images/anor-shop.png',
+    overview: 'ANOR SHOP is a modern e-commerce web application engineered with Feature-Sliced Design (FSD) architecture, offering distinct Client and Admin role features and optimized pagination for high performance.',
+    challenge: 'Delivering fast catalog loading for large product sets while providing administrators complete control over inventory management, pricing metrics, and product categories.',
+    solution: 'Built client features for instant search, dynamic multi-filtering, and detailed product views alongside an Admin dashboard with full CRUD capabilities for products and categories, paginated lists, and average price calculations.',
     features: [
-      'Main Deposit baseline configuration and monthly edit workflow',
-      'Automated monthly compounding yield calculations & schedule tables',
-      'Print-ready audit report views with PDF export layout support',
-      'Persistent dark and light visual themes with high-contrast accessibility'
+      'Client Portal: Instant product search, multi-criteria filtering, detail views & paginated catalog',
+      'Admin Portal: Full CRUD operations for products and categories with average price metrics',
+      'Optimized pagination for fast catalog rendering and lower payload overhead',
+      'Feature-Sliced Design (FSD) architecture with TypeScript & Unit Tests',
+      'Token-based session management and TanStack Query state caching'
     ],
-    technicalDecisions: 'Leveraged Vite for lightning-fast module bundling and strict TypeScript typings to prevent runtime arithmetic errors and type mismatches in financial calculations.',
-    demoUrl: 'https://github.com/softwareaka',
-    githubUrl: 'https://github.com/softwareaka'
-  },
-  'devstudio-portal': {
-    title: 'DEVSTUDIO PORTAL',
-    subtitle: 'Client Onboarding & Project Intake Portal',
-    image: 'assets/images/devstudio-portal.png',
-    overview: 'DevStudio Portal is a lightweight, high-speed project intake web application created to streamline client registration, project scoping, and asset collection.',
-    challenge: 'Guiding non-technical clients through complex multi-step technical questionnaires while validating payloads before submission.',
-    solution: 'Created an accessible multi-stage form wizard with client-side field validation, step restore capabilities, and interactive preview cards.',
-    features: [
-      'Multi-stage guided form wizard with instant step restoration',
-      'Real-time client-side field validation with accessibility ARIA alerts',
-      'Payload file upload validator with file-type checking',
-      '100/100 Lighthouse performance score with zero external dependencies'
-    ],
-    technicalDecisions: 'Built using pure HTML5 semantic elements, modular Vanilla CSS, and modern Fetch API calls to deliver an instant loading experience without heavy external libraries.',
+    technicalDecisions: 'Utilized React, TypeScript, Mantine UI, Zustand, and TanStack Query to manage complex e-commerce state, REST API calls with automated retry logic, and FSD modular boundaries.',
     demoUrl: 'https://github.com/softwareaka',
     githubUrl: 'https://github.com/softwareaka'
   }
