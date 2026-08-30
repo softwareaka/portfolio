@@ -42,7 +42,9 @@ portfolio/
 ├── assets/
 │   ├── images/             # Project screenshots
 │   │   ├── anor-shop.png
-│   │   └── kilowatt-tracker.png
+│   │   ├── kilowatt-tracker.png
+│   │   ├── deposit-manager.png
+│   │   └── devstudio-portal.png
 │   └── icons/              # Custom SVG assets
 └── README.md               # Documentation
 ```
@@ -62,10 +64,6 @@ npx serve . -p 3000
 ```bash
 python -m http.server 8000
 ```
-
-Open your browser at `http://localhost:3000` or `http://localhost:8000`.
-
----
 
 ## 📄 License
 
