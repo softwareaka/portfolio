@@ -236,6 +236,7 @@ ul {
 .logo-text {
   color: var(--text-primary);
   font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .nav-list {
@@ -256,6 +257,10 @@ ul {
 .nav-link:hover,
 .nav-link.active {
   color: var(--text-primary);
+}
+
+.mobile-drawer-socials {
+  display: none;
 }
 
 .nav-link::after {
@@ -1384,4 +1389,23 @@ ul {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.nav-header-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .nav-header-socials {
+    display: none !important;
+  }
+  .nav-actions .social-icon-btn {
+    display: none !important;
+  }
+  .logo-text {
+    font-size: clamp(0.72rem, 3.2vw, 0.85rem) !important;
+    white-space: nowrap !important;
+  }
 }
