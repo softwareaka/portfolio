@@ -16,10 +16,15 @@ A high-performance, responsive, and minimal portfolio website built strictly usi
 - **Categorized Tech Stack**:
   - **Core Stack**: JavaScript · TypeScript · React
   - **Ecosystem**: TanStack Query · Redux Toolkit · Zustand · Axios · REST API
+  - **Unit Testing**: Vitest · React Testing Library · Testing Library
   - **UI & Styling**: Mantine · Material UI · Tailwind CSS · Sass · Bootstrap
   - **Tools**: Git · Vite · ESLint · Prettier · Figma
+- **Featured Live Projects**:
+  - **taiga.io**: [https://anortaiga.tech](https://anortaiga.tech)
+  - **Kilowatt Tracker**: [https://kilowatt-calculator.vercel.app/](https://kilowatt-calculator.vercel.app/)
+  - **Anor Shop**: [https://anor-shop-mavv.vercel.app/](https://anor-shop-mavv.vercel.app/)
 - **Editorial Project Showcase**: Large featured project layout followed by alternating split-view project cards.
-- **Interactive Case Study Modal**: Deep dive into engineering challenges, technical solutions, and architecture choices (FSD, TanStack Query, Zustand).
+- **Interactive Case Study Modal**: Deep dive into engineering challenges, technical solutions, unit testing suites, and architecture choices (FSD, TanStack Query, Zustand, Vitest, Testing Library).
 - **Interactive Contact Form**: Real-time JavaScript validation with toast feedback.
 - **Accessibility & SEO**: Semantic HTML5 elements, ARIA attributes, skip link, and Open Graph metadata.
 

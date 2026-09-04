@@ -17,10 +17,10 @@ const PROJECTS_DATA = {
       'Deadline tracking, milestone scheduling, and urgent alert badges',
       'Feature-Sliced Design (FSD) modular frontend structure',
       'Token-based authentication and secure session state sync',
-      'Comprehensive Unit Testing suite ensuring reliable component state'
+      'Comprehensive Unit Testing suite built with Vitest and React Testing Library'
     ],
-    technicalDecisions: 'Built with React, Mantine UI, and TanStack Query for server-side state synchronization. Architecture scaled using FSD guidelines and verified with TypeScript static typing and automated unit tests.',
-    demoUrl: 'https://github.com/softwareaka',
+    technicalDecisions: 'Built with React, Mantine UI, and TanStack Query for server-side state synchronization. Architecture scaled using FSD guidelines and verified with TypeScript static typing and automated unit tests powered by Vitest and React Testing Library.',
+    demoUrl: 'https://anortaiga.tech',
     githubUrl: 'https://github.com/softwareaka'
   },
   'kilowatt-tracker': {
@@ -35,10 +35,11 @@ const PROJECTS_DATA = {
       'Kilowatt duration calculator forecasting remaining supply days based on consumption rate',
       'Multi-period analytics: Daily, 3-day, and monthly usage metrics for kWh and credits',
       'Monthly reporting dashboard summarizing total spent, average kWh usage, and credit history',
-      'Dynamic multi-language support (i18n engine) for seamless localization'
+      'Dynamic multi-language support (i18n engine) for seamless localization',
+      'Automated unit testing with Vitest and Testing Library for core calculation logic'
     ],
-    technicalDecisions: 'Leveraged React, Mantine UI, and TypeScript for high type safety and fluid UI components. Implemented i18n localization for instant language switches and client-side calculations for instant results.',
-    demoUrl: 'https://github.com/softwareaka',
+    technicalDecisions: 'Leveraged React, Mantine UI, and TypeScript for high type safety and fluid UI components. Implemented i18n localization for instant language switches, client-side calculations, and unit tests using Vitest and Testing Library for zero-error balance forecasts.',
+    demoUrl: 'https://kilowatt-calculator.vercel.app/',
     githubUrl: 'https://github.com/softwareaka'
   },
   'anor-shop': {
@@ -52,11 +53,11 @@ const PROJECTS_DATA = {
       'Client Portal: Instant product search, multi-criteria filtering, detail views & paginated catalog',
       'Admin Portal: Full CRUD operations for products and categories with average price metrics',
       'Optimized pagination for fast catalog rendering and lower payload overhead',
-      'Feature-Sliced Design (FSD) architecture with TypeScript & Unit Tests',
+      'Feature-Sliced Design (FSD) architecture with TypeScript & Unit Tests (Vitest, Testing Library)',
       'Token-based session management and TanStack Query state caching'
     ],
-    technicalDecisions: 'Utilized React, TypeScript, Mantine UI, Zustand, and TanStack Query to manage complex e-commerce state, REST API calls with automated retry logic, and FSD modular boundaries.',
-    demoUrl: 'https://github.com/softwareaka',
+    technicalDecisions: 'Utilized React, TypeScript, Mantine UI, Zustand, and TanStack Query to manage complex e-commerce state, REST API calls with automated retry logic, and FSD modular boundaries. Validated critical user flows with Vitest and Testing Library.',
+    demoUrl: 'https://anor-shop-mavv.vercel.app/',
     githubUrl: 'https://github.com/softwareaka'
   }
 };
